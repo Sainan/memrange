@@ -30,4 +30,4 @@ keywords = ["address", "range", "memory-image"]
 license-file = "LICENSE"
 
 [dependencies]
-serde = { version = "1.0.219", features = ["derive"] }
+serde = { version = "1.*.*", features = ["derive"] }
