@@ -1,10 +1,11 @@
-extern crate rustc_serialize;
+extern crate serde;
 
+use serde::{Serialize, Deserialize};
 use std::cmp;
 use std::u64;
 use std::cmp::Ordering;
 
-#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Hash, RustcEncodable, RustcDecodable)]
+#[derive(Debug, Copy, Clone, PartialEq, Eq, PartialOrd, Hash, Serialize, Deserialize)]
 pub struct Range{
     pub min: u64,
     pub max: u64
